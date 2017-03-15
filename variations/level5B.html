@@ -3,13 +3,49 @@
 	<head>
 		<title>five b</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	</head>
 
+</head>
+
+<div class="circlegif">
 	<style media="screen">
+
+
 
 	body { background-color: 	rgb(200,200,200);
 		    font-family: 'Raleway', sans-serif;
-}
+
+				z-index:-1;
+
+				transition: right;
+
+				    position: relative;
+				    -webkit-animation: myfirst 5s infinite; /* Chrome, Safari, Opera */
+				    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+				    animation: myfirst 5s infinite;
+				    animation-direction: alternate;
+				}
+
+				/* Chrome, Safari, Opera */
+				@-webkit-keyframes myfirst {
+				    0%   {background: red; left: 0px; top: 0px;}
+				    25%  {background: yellow; left: 200px; top: 0px;}
+				    50%  {background: blue; left: 200px; top: 200px;}
+				    75%  {background: green; left: 0px; top: 200px;}
+				    100% {background: red; left: 0px; top: 0px;}
+				}
+
+				@keyframes myfirst {
+				    0%   {background: red; left: 0px; top: 0px;}
+				    25%  {background: yellow; left: 200px; top: 0px;}
+				    50%  {background: blue; left: 200px; top: 200px;}
+				    75%  {background: green; left: 0px; top: 200px;}
+				    100% {background: red; left: 0px; top: 0px;}
+				}
+
+
+
+
+
 .circlehome {
 	width: 15px;
 	height: 15px;
@@ -54,6 +90,7 @@
 
 
   </style>
+
 	<a href="../index.html" class="circlehome"> </a>
 	</div>
 
@@ -67,14 +104,15 @@
 
 <style media="screen">
 	.heading{ color:white;
-	
+
 	  font-size: 24px;  line-height: 80px;  letter-spacing: 100px;
 	  }
 
-.author {	position:fixed;
+.author {	
 	top:600px;
 left: 1000px;
- font-family:monospace;}
+ font-family:monospace;
+}
 
  .manifesto {
 font-size: 600px;
@@ -99,6 +137,46 @@ font-size: 600px;
 <br><br><br><br><br><br><br>
 
 <div class="manifesto">
+
+<style media="screen">
+.circlegif
+{
+
+
+z-index:-1;
+
+transition: right;
+
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+
+</style>
+<div class="circlegif">
+
+
+
 
 
 	There are three states of being.
