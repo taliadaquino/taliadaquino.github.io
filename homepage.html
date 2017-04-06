@@ -28,15 +28,61 @@ height: 1500px;
 	 left:35%;
  top:90px;
  bottom:450px;
-
-
 }
+ .container {
 
-</style>
+ }
+
+ ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ li {
+
+   padding: 0 20px;
+ }
+
+ span {
+
+   display: block;
+   cursor: pointer;
+ }
+
+ span:before, span:after {
+   content: '';
+   position: absolute;
+   width: 0%;
+   height: 3px;
+   top: 50%;
+   margin-top: -0.5px;
+   background:
+ }
+
+ span:before {
+   left: -2.5px;
+ }
+ span:after {
+   right: 2.5px;
+   background: transperant;
+   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+ }
+
+ span:hover:before {
+   background: #FF7F50;
+
+   width: 100%;
+   transition: width 0.5s
+ }
+
+ span:hover:after {
+   background: transparent;
+   width: 100%;
+   transition: 0s;
+ }
 
 
-
-<style media="screen">
 
 .footer {
   position: relative;
@@ -76,9 +122,12 @@ left:5%;  letter-spacing: 2px; color:	 #FF7F50;
 
 <a href="./variations/index.html">
 
-<div class="variations"> variations
-
-
+<div class="variations"><div class="container">
+	 <ul>
+		 <li><span> variations
+</span></li>
+</ul>
+</div>
 </div>
 
 
@@ -91,7 +140,7 @@ left:5%;  letter-spacing: 2px; color:	 #FF7F50;
 
 	position:fixed;
 	top:300px;
-	left:28%;  letter-spacing: 2px; color:	 #FF7F50;
+	left:26%;  letter-spacing: 2px; color:	 #FF7F50;
 
 
 	  font-size: 40px;
@@ -99,13 +148,15 @@ left:5%;  letter-spacing: 2px; color:	 #FF7F50;
 	}
 
 </style>
+
 <a href="./essay/essay.html">
-<div class="essay"> essay
 
-
+<div class="essay"><div class="container">
+	 <ul>
+		 <li><span> essay
+</ul>
 </div>
-
-
+</div>
 
 
 <style media="screen">
@@ -113,7 +164,7 @@ left:5%;  letter-spacing: 2px; color:	 #FF7F50;
 
 	position:fixed;
 	top:300px;
-	left:43%;  letter-spacing: 2px; color:	 #FF7F50;
+	left:41%;  letter-spacing: 2px; color:	 #FF7F50;
 
 
 	  font-size: 40px;
@@ -123,12 +174,17 @@ left:5%;  letter-spacing: 2px; color:	 #FF7F50;
 </style>
 
 <a href="./repost/index.html">
-<div class="repost"> repost
 
 
+
+
+
+<div class="repost"><div class="container">
+	 <ul>
+		 <li><span>  repost
+</ul>
 </div>
-
-
+</div>
 
 
 
@@ -137,7 +193,7 @@ left:5%;  letter-spacing: 2px; color:	 #FF7F50;
 
 	position:fixed;
 	top:300px;
-	left:60%;  letter-spacing: 2px; color:	 #FF7F50;
+	left:57%;  letter-spacing: 2px; color:	 #FF7F50;
 
 
 	  font-size: 40px;
@@ -146,12 +202,20 @@ left:5%;  letter-spacing: 2px; color:	 #FF7F50;
 
 </style>
 
+
+
 <a href="./exercise/index.html">
-<div class="exercises"> exercises
 
 
+
+
+<div class="exercises">
+	<div class="container">
+	 <ul>
+		 <li><span>  exercises
+</ul>
 </div>
-
+</div>
 
 
 
@@ -160,7 +224,7 @@ left:5%;  letter-spacing: 2px; color:	 #FF7F50;
 
 	position:fixed;
 	top:300px;
-	left:80%;  letter-spacing: 2px; color:	 #FF7F50;
+	left:77%;  letter-spacing: 2px; color:	 #FF7F50;
 
 
 	  font-size: 40px;
@@ -169,8 +233,23 @@ left:5%;  letter-spacing: 2px; color:	 #FF7F50;
 
 </style>
 
+
+
 <a href="ADD LINK HERE.html">
-<div class="project3"> project3
+
+
+
+
+<div class="project3">
+	<div class="container">
+	 <ul>
+		 <li><span>  project3
+</ul>
+</div>
+</div>
+
+
+
 
 
 
