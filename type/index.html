@@ -7,14 +7,22 @@
 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-
+		<script type="text/javascript">
+		  function unhide(divID) {
+		    var item = document.getElementById(divID);
+		    if (item) {
+		      item.className=(item.className=='hidden')?'unhidden':'hidden';
+		    }
+		  }
+		</script>
 
 	<style media="screen">
 
 		body { background-color: 	white;
 			   font-family: 'Lora', serif;
 				 height:5000px;
-				padding-top: 50px; padding-right: 200px; padding-left: 100px;
+				padding-top: 50px; padding-left: 70px;
+
 	}
 
 
@@ -23,7 +31,7 @@ font-size: 35pt;
 color:#ff4a4a;
 font-weight: 90;
 position: absolute;
-padding-right: 100px;
+padding-right: 150px;
 padding-bottom: 50px;
 :center; letter-spacing: 5px;
 
@@ -40,13 +48,18 @@ color:blue;}
 blockquote { background-image: url(http://typespiration.com/wp-content/themes/typespiration/images/quote.png); background-position: 10px 10%; background-repeat: no-repeat no-repeat; padding: 150px 0; }
 
 
-t { color: white; background: #ff4a4a; font-size: 60px; line-height: 74px; font-weight: 400; margin: 0 5px 24px; float: left; padding: 60px; margin:  5px 24px; font-family: 'Libre Baskerville', serif; }
-j{ color: white; background: #ff4a4a; font-size: 60px; line-height: 74px; font-weight: 400; margin: 0 5px 24px; float: right; padding: 60px; margin:  5px 24px; font-family: 'Libre Baskerville', serif; }
+t { color: white; background: #ff4a4a; font-size: 60px; line-height: 74px; font-weight: 400; margin: 0 5px 24px; float: left; padding: 60px; margin:   24px; font-family: 'lora', serif; text-align: center;margin-bottom: 40px; }
 
-.punchline p { background: #f2f2f2; color: #ff4a4a; }
+j{ color: white; background: #ff4a4a; font-size: 60px; line-height: 74px; font-weight: 400;  float: right; padding: 100px; margin:   24px; margin-bottom: 40px; font-family: 'lora', serif;}
+
+l {color: white; background: #ff4a4a; font-size: 62px; line-height: 74px; font-weight: 400; ;text-align: auto;float: left; padding: 60px; margin:   24px; font-family: 'lora', serif;;margin-bottom: 40px;}
+m {color: white; background: #ff4a4a; font-size: 50px; line-height: 74px; font-weight: 300; ;text-align: auto;float: left; padding: 60px; margin:   24px; font-family: 'lora', serif;;margin-bottom: 40px;}
 
 
-a { color: #adadad; font-size: 25px; text-decoration: none; float: right; font-family: 'Libre Baskerville', serif; line-height: 4; }
+.punchline u { background: #f2f2f2; color: #ff4a4a; }
+
+
+a { color: #adadad; font-size: 25px; text-decoration: none; float: right; font-family: 'lora', serif; line-height: 4; }
 
 
 a:hover { color: #ff4a4a; text-decoration: none; }
@@ -64,21 +77,39 @@ color: blue;
   right: 0;
   bottom: 0;
   left: 0;
+
   padding: 10rem;
   background-color: #ff4a4a;
-text-align: center;
-
 	font-size: 20px;
 }
+.white{
+  position: absolute;
+
+  bottom: 15;
+top:100;
+left:0;
+
+  padding: 10rem;
+  background-color: white;
+
+}
+
+
 .foottext {color:white;
-left:500px;
+left:600px;
 text-transform: uppercase;
 font-family:  'Montserrat', sans-serif;
   letter-spacing: 10px;}
 .smwl {
 	font-family:  'Montserrat', sans-serif;
 	  letter-spacing: 10px;
-	padding-left: 350px;
+		width: 500px;
+		height: 200px;
+		top: 12%;
+		left: 50%;
+		right:50%;
+		margin-top: -100px;
+		margin-left: -200px;
 padding-top: 50px;
 color: blue;
 position: fixed;
@@ -91,12 +122,12 @@ overflow: scroll;
 	  letter-spacing: 10px;
 
 	color:blue;
-	 line-height: 20px;
-	   font-size: 20px;
-	 position: fixed;
+	 line-height: 40px;
+	   font-size: 18px;
+position:fixed;
 	 left:-10%;
- top:500px;
- bottom:450px;
+ top:350px;
+ bottom:400px;
 -webkit-transform: rotate(-90deg);
 
 -moz-transform: rotate(-90deg);
@@ -105,7 +136,13 @@ overflow: scroll;
 
 -o-transform: rotate(-90deg);
 
-}
+
+
+display: block; }
+
+
+
+a:hover {color: blue;}
 .td{
 	font-family:  'Montserrat', sans-serif;
 	  letter-spacing: 10px;
@@ -128,22 +165,38 @@ overflow: scroll;
 }
 }
 
+.imgcenter
+{
+position: relative;
+left:800px;
+top:200px;
+z-index:-1;
+max-width: 500px;
+ height: 100px;
+}
+
 
 </style>
 
-<div class="td">
-	- TALIA D'AQUINO -
-</div>
-<div class="wih">
-	WHERE IS HERE?
+
+		<a class="td" href="https://taliadaquino.com/" target="_blank">	- TALIA D'AQUINO -</a>
+
+
 
 </div>
+<div class="wih">
+	WHERE IS HERE?</div>
+
+	<div class="white"> &emsp;
+		</div>
+</div> </div><div>
 <div class="smwl">
 
 SAY MORE - WRITE LESS
 
 
 </div>
+
 <div class="footer"> &emsp;
 	<div class="foottext">
 
@@ -156,45 +209,32 @@ SAY MORE - WRITE LESS
 <div class="title">
 
 </div>
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 <div class="text"> </i>
-	<t> Type surrounds us. </i></t> <i><br><br>When we wake up, when we complete tasks and most importantly when and how we communicate. Almost every activity done as humans uses typography in some form. But how much do we notice of this design practice? It is regularly used and commonly ignored; but when typography is appreciated and noticed there’s a key denominator the attempt to <br></i><t> outdo what has been done <br>before,<br> </t> <i> resulting in an over done practice we are still yet to perfect. When designing a typeface you ask yourself a group of key questions to ensure the best quality for your desired outcome.<p>
-		<ul>
-			<li> Is it a display or a text font? </li>
-<li>What needs to stand out? </li>
-<li> How will I make this different? </li>
-</ul>
+
+	<k> <l> <i> Typography is a curious subject matter to discuss.</i></l><br><br><br> There are either those who know, and those who don't. </i>Some graphic designers have a strong, passionate approach; others don’t. There are a few caught in the middle,admiring but not producing. But to what extent can the typographic craft be relied on? Do designers ignore the immerse journey craft-makers take in the with their typographic process? Are designers putting themselves ahead of the message and <l> <i> using typography to overpower the content?</i></l>
+<p>
+Contemporary designers seek a need to over decorate their typographic work or even over decorate their already well-produced work with typography, resulting in <br><l> <i> a cluttered mess.    &nbsp;&nbsp;&nbsp;&nbsp;   </l> </i> <br><br><Br><Br><br> This is not good design. An over reliance on typography untimely leads to a misuse, lack of though or unnecessary amount of content over the context. What we need to learn through our practice is faith in the craft of typography. Remember the message of the original design and refine the type to suit a purpose. A lack of understanding and appreciation is resulting in a generation of designers adding unnecessary frills to letterforms.
+<p>
+When we keep creating we also eliminate. To what extent can we keep changing typefaces until there are too many options, so many opportunities they become indistinct to each other. The reliance we have of typefaces and the pressure we put on them to say so much is penetrating. Settling down on the dramatic meanings and definitions behind typefaces may allow the craft to extend more freely. If a picture writes a thousand words; <m> <i>typography is twenty-six pictures to create with. Choosing the right typeface can say all that is necessary. </m></i>
 <p>
 
-Realistically we need to remember:
-<ul> <li> why is this important? </li>
-	<li> Is it different from before? </li>
-	<li> Is it being designed just to be different?</li> </ul>
-	<p> The more we design and use our typography the quicker we forget the key necessities for good type design.
-
+Realistically we need to remember, why is a new typeface important? Is it different from before? Is it being designed just for the sake of being different? In the urgency to design and explore typography in the contemporary landscape, designers have forgotten the key necessities for good type design.
 <p>
-Our world continues to change and adapt; a continuous and unavoidable consistent. Yet we can always rely on the fact that everyone now sits behind a computer to process communication and to follow what we give them as a <br><center>&nbsp;</i><t> default. </center></t> &nbsp;&nbsp;&nbsp;&nbsp;<i>When they push away from the provided</i> <br><j> default </right></j>
-<br><br><br><i>
-they forget its purpose. Unless crafted the resolution perfectly, they forget how to fit typography into the design and continuously keep these components separate. Forgetting the over reliance and redundant use on typography in their work.
-<p></i> <t>
-Eliminate this problem all together and retract the dependence on typography to fix the poor design. Remember the purpose it was crafted for and when the designer asked themselves the key questions and use it in that form. </t>
-<p><i>
-When we keep creating we also eliminate. To what extent can we keep changing typefaces until there are too many options, so many opportunities they become obsolete to each other. The reliance we have of typefaces and the pressure we put on them to say so much is penetrating. Think of how a picture writes a thousand words, typography is twenty-six pictures to write from. Choosing a typeface can say more then necessary.
+Eliminate this problem all together and retract the dependence on typography to fix the poor design. Remember the purpose it was crafted for and the benefits when the designer uses it in that form.
+<p>
+Take it easy, take a step back, and take a moment to begin the process again. Through the years of trial and error ever beginning with Guttenberg, we can afford to take a breath. Start from the basics again and remember the use of your design skills before the flood of typography sets into overdrive and becomes the new norm. The craft of typography isn’t created to fix the dull design or even as an afterthought.
+<i> <l>
+A rule to follow, remember to consider the message more then the text and body of design. The context is enough before the rigorous dress-up of typography.</l>  <l>
+A statute to follow, focus less on overshadowing the message. </i></l>
+<p><k>
+Typography isn’t the core, and it is most definitely not a crutch. Focus on content, then the work of design. Don’t attempt to outdo what has been done before, resulting in an over done practice we are still yet to perfect. With typography being so inquisitive to designers, we need to remember how to place the content carefully. <p>Remembering the message itself is the key and not to over power this with a reliance on <i> typography.</i>
 
 
-<p></i>
-<t>
-Go back to the basics and the beginning, don't think what can be done different but remember what has been done and why it worked.</i><i>
-<ul>
-Typefaces tell their own story and give their own rules: </li> </t>
-<li>	Does it need to be read?</li>
-<li>Does it need to stand out?</li>
-<li>Does it need to add emphasis?</li>
-</ul> <p> Families in typefaces are critical to saying more
 
-<p></i>
-<t>
-Express your text, be bold in your words, be italic in your elegance. If we continue path his path we must change the rules of typography, change the reading of typography, change the creation of typography and most importantly change the use of typography. Enjoy the craftsmanship of fonts but don't abuse the beauty of typography. Modify the way we look at type, express type and appreciate type. If we change the future of font design we need to ensure there is no more abuse played on the reliance of typography.
+
 
 </div> <br><br><br><br><br>
 	</body> </html>

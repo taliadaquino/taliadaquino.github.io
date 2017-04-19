@@ -1,8 +1,47 @@
-.box {
-height:100px;
-width:200px;
-background-color: blue;
-border: 10px solid blue;
-color:yellow;
 
+
+
+img {width :500px;}
+
+
+
+
+
+body {
+font-family: sans-serif;
+text-align: justify;
 }
+
+
+.number {font-size: 10px;
+}
+
+.number:hover{background-color:red;
+}
+
+.footnote {position: fixed;
+bottom: 10px;
+left: 200px;
+display:none;
+}
+
+
+
+.text{
+padding-left: 200px;
+padding-right: 400px;
+color: gray;
+}
+
+.caption {font-size: 10px;
+}
+
+
+.footnote.showme {
+
+  display: block;
+  background-color: white;
+}
+
+
+.metahaven.orange {color:orange; font-size: 12px; transition: 2s;}
