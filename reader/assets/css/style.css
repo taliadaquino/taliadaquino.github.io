@@ -1,0 +1,86 @@
+* {
+  box-sizing:border-box;
+}
+
+
+.heading{
+  width: 2.5%;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  
+  }
+
+.rotate {
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.fcontent {
+font-family: 'Raleway', sans-serif;
+top:50%;
+bottom:50%;
+text-align:center;
+padding-top: 350px;
+    white-space: nowrap;
+}
+
+
+.mainarticle{
+  width: 47.5%;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 2.5%;
+  background-color:  rgb(123,104,238);
+  color: white;
+  padding: 100px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+
+
+}
+
+.articles{
+  width: 47.5%;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  background-color: rgb(230,230,250);
+
+}
+
+.rightfooter{
+  width: 2.5%;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 97.5%;
+  background-color: white;
+  white-space: nowrap;
+  font-family: 'Raleway', sans-serif;
+  text-align:center;
+  padding-top: 350px;
+  text-decoration: underline;
+
+}
+
+.rotateright {
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
