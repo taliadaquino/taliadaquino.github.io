@@ -4,14 +4,15 @@
 
 
 .heading{
-  width: 2.5%;
+  width: 7%;
   height: 100vh;
   overflow: scroll;
   position: fixed;
   top: 0;
   left: 0;
   background-color: white;
-  
+
+
   }
 
 .rotate {
@@ -24,49 +25,54 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 .fcontent {
+
 font-family: 'Raleway', sans-serif;
 top:50%;
 bottom:50%;
 text-align:center;
 padding-top: 350px;
-    white-space: nowrap;
+white-space: nowrap;
+  font-weight: 600;
 }
 
 
 .mainarticle{
-  width: 47.5%;
+  width: 40%;
   height: 100vh;
   overflow: scroll;
   position: fixed;
   top: 0;
-  left: 2.5%;
-  background-color:  rgb(123,104,238);
+  left: 7%;
+  background-color: white;
   color: white;
-  padding: 100px;
+  padding-left: 20px;
+  padding-right: 60px;
+  padding-top:20px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 900;
-
-
+  font-weight: 300;
+  font-size: 12px;
+  color: rgb(255,99,71);
+  line-height: 1.4;
 }
 
 .articles{
-  width: 47.5%;
+  width: 50%;
   height: 100vh;
   overflow: scroll;
   position: fixed;
   top: 0;
-  left: 50%;
+  left: 47%;
   background-color: rgb(230,230,250);
 
 }
 
 .rightfooter{
-  width: 2.5%;
+  width: 7%;
   height: 100vh;
   overflow: scroll;
   position: fixed;
   top: 0;
-  left: 97.5%;
+  left: 92.5%;
   background-color: white;
   white-space: nowrap;
   font-family: 'Raleway', sans-serif;
@@ -82,5 +88,35 @@ padding-top: 350px;
 -ms-transform: rotate(90deg);
 -o-transform: rotate(90deg);
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.rollover {
+  color: red;
+}
+
+.rollover:hover {
+  color: blue;
+}
+
+.blur {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left:55%;
+  color:black;
+}
+}
+
+.blur.showme {
+  opacity: 1;
+}
+
+
+
 
 }
