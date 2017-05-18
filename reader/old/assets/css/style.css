@@ -1,0 +1,167 @@
+* {
+  box-sizing:border-box;
+}
+
+
+.heading{
+  width: 7%;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+
+
+  }
+
+.rotate {
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.fcontent {
+
+font-family: 'Raleway', sans-serif;
+top:50%;
+bottom:50%;
+text-align:center;
+padding-top: 350px;
+white-space: nowrap;
+  font-weight: 600;
+}
+
+
+.mainarticle{
+  width: 40%;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 7%;
+  background-color: white;
+  color: white;
+  padding-left: 20px;
+  padding-right: 60px;
+  padding-top:20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: rgb(255,99,71);
+  line-height: 1.4;
+}
+
+.articles{
+  width: 50%;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 47%;
+  background-color: rgb(230,230,250);
+
+}
+
+.rightfooter{
+  width: 7%;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 92.5%;
+  background-color: white;
+  white-space: nowrap;
+  font-family: 'Raleway', sans-serif;
+  text-align:center;
+  padding-top: 350px;
+  text-decoration: underline;
+
+}
+
+.rotateright {
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.rollover {
+  color: red;
+}
+
+.rollover:hover {
+  color: blue;
+}
+
+.blur {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left:55%;
+  color:black;
+}
+}
+
+.blur.showme {
+  opacity: 1;
+}
+
+
+
+.nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+/* Notice the position.. it's right:-50vw; that means its 50% off the screen, HIDDEN.  */
+
+.menu {
+  height: 100vh;
+  width: 50vw;
+  background-color: skyblue;
+  position: fixed;
+  right: -50vw;
+  top: 0px;
+  z-index: 1;
+  transition: all 2s;
+}
+
+
+/* The added class showme makes the right 0. So it transitions from -50vw offscreen to right 0 on screen.  */
+
+.menu.showme {
+  right: 0;
+  transition: all 2s;
+}
+
+.main {
+  transition: all 2s;
+  margin-top: -0px;
+}
+
+.main.moveleft {
+  margin-top: -40vw;
+  transition: all 2s;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+}

@@ -3,25 +3,24 @@
 }
 
 
-.heading{
+.nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
   width: 7%;
   height: 100vh;
   overflow: scroll;
   position: fixed;
   top: 0;
-  left: 0;
-  background-color: white;
-
-
-  }
-
-.rotate {
--webkit-transform: rotate(-90deg);
--moz-transform: rotate(-90deg);
--ms-transform: rotate(-90deg);
--o-transform: rotate(-90deg);
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
+  left: 92.5%;
+  white-space: nowrap;
+  font-family: 'Raleway', sans-serif;
+  text-align:center;
+  padding-top: 350px;
+  text-decoration: underline;
+  -webkit-transform: rotate(90deg);
 }
 
 .fcontent {
@@ -32,7 +31,14 @@ bottom:50%;
 text-align:center;
 padding-top: 350px;
 white-space: nowrap;
-  font-weight: 600;
+font-weight: 600;
+width: 7%;
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+cursor: pointer;
+-webkit-transform: rotate(-90deg);
 }
 
 
@@ -44,7 +50,6 @@ white-space: nowrap;
   top: 0;
   left: 7%;
   background-color: white;
-  color: white;
   padding-left: 20px;
   padding-right: 60px;
   padding-top:20px;
@@ -55,40 +60,48 @@ white-space: nowrap;
   line-height: 1.4;
 }
 
-.articles{
-  width: 50%;
+.support{
+  width: 45%;
   height: 100vh;
   overflow: scroll;
   position: fixed;
   top: 0;
   left: 47%;
   background-color: rgb(230,230,250);
-
-}
-
-.rightfooter{
-  width: 7%;
-  height: 100vh;
-  overflow: scroll;
-  position: fixed;
-  top: 0;
-  left: 92.5%;
-  background-color: white;
-  white-space: nowrap;
+  padding-left: 70px;
+  padding-right: 60px;
+  padding-top:200px;
+  padding-bottom: 100px;
   font-family: 'Raleway', sans-serif;
-  text-align:center;
-  padding-top: 350px;
-  text-decoration: underline;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: justify;
 
 }
 
-.rotateright {
--webkit-transform: rotate(90deg);
--moz-transform: rotate(90deg);
--ms-transform: rotate(90deg);
--o-transform: rotate(90deg);
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
+
+.menu {
+  height: 100vh;
+  width: 50vw;
+  background-color: rgb(230,230,250);
+  position: fixed;
+  right: -50vw;
+  top: 0px;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.menu.showme {
+  right: 0;
+  transition: all 1s;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
 }
 
 .rollover {
@@ -115,8 +128,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 .blur.showme {
   opacity: 1;
 }
-
-
-
-
+.landscape__image {
+  top: 20px;
+  right: 100px;
 }

@@ -1,21 +1,20 @@
 $(document).ready(function() {
 
+  // Add jQuery here
 
-// Add jQuery here
+  // On .nav click, toggleClass ON or OFF showme.
 
-$('.one').mouseenter(function() {
-  $('.one__text').addClass('showme');
+$('.nav').click(function() {
+  $('.menu').toggleClass('showme');
 });
 
 
-$('.one').mouseleave(function() {
-  $('.one__text').removeClass('showme');
+});
+$(".landscape").mouseenter(function() {
+  $(".landscape__image").addClass("showme");
 });
 
-
-
-
-
-
-
-  });
+$(".landscape").mouseleave(function() {
+  $(".landscape__image").removeClass("showme");
+});
+});
