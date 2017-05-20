@@ -11,10 +11,10 @@ $('.nav').click(function() {
 
 });
 $(".landscape").mouseenter(function() {
-  $(".landscape__image").addClass("showme");
+  $(".landscape").addClass("showme");
 });
 
 $(".landscape").mouseleave(function() {
-  $(".landscape__image").removeClass("showme");
+  $(".landscape").removeClass("showme");
 });
 });

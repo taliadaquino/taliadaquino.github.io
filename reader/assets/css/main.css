@@ -128,7 +128,11 @@ cursor: pointer;
 .blur.showme {
   opacity: 1;
 }
-.landscape__image {
-  top: 20px;
+.landscape {
+  opacity: 0;
+  right: 100px;
+}
+.landscape.showme {
+  opacity: 1;
   right: 100px;
 }
