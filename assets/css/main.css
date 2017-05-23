@@ -78,6 +78,50 @@ cursor: pointer;
   line-height: 1.4;
   text-align: justify;
 
+
+}
+p{
+
+  width: 45%;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: justify;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+p a{
+  color: white;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
 }
 
 
@@ -91,6 +135,11 @@ cursor: pointer;
   top: 0px;
   z-index: 1;
   transition: all 1s;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 150px;
+  white-space: nowrap;
+  font-weight: 300;
+  padding-left: 80px;
 }
 
 .menu.showme {
@@ -131,8 +180,13 @@ cursor: pointer;
 .landscape {
   opacity: 0;
   right: 100px;
+    background-color: white;
+
 }
 .landscape.showme {
   opacity: 1;
   right: 100px;
+    background-color: white;
+
+
 }

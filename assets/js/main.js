@@ -16,5 +16,5 @@ $(".landscape").mouseenter(function() {
 
 $(".landscape").mouseleave(function() {
   $(".landscape").removeClass("showme");
-});
+
 });
