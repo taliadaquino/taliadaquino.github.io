@@ -161,8 +161,12 @@ cursor: pointer;
   padding-left: 80px;
   color: white;
   font-size: 15pt;
-  text-decoration: line-through;
 
+
+}
+mark {
+    background-color: rgb(255,99,71);
+    color: red;
 }
 
 .menu.showme {

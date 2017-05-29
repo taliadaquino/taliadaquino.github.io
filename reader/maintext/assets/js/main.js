@@ -12,37 +12,21 @@ $(".landscape").mouseenter(function() {
   $(".landscape").addClass("showme");
 });
 
-$(".landscape").mouseleave(function() {
-  $(".landscape").removeClass("showme");
 
-});
 
 $(".formrollover").mouseenter(function() {
   $(".form").addClass("showme");
 });
 
-$(".formrollover").mouseleave(function() {
-  $(".form").removeClass("showme");
-
-
-});
 
 $(".storyrollover").mouseenter(function() {
   $(".story").addClass("showme");
 });
 
-$(".storyrollover").mouseleave(function() {
-  $(".story").removeClass("showme");
-
-  });
 
 
   $(".historyrollover").mouseenter(function() {
     $(".history").addClass("showme");
-  });
-
-  $(".historyrollover").mouseleave(function() {
-    $(".history").removeClass("showme");
 
     });
     $(".namerollover").mouseenter(function() {
