@@ -1,192 +1,62 @@
-* {
-  box-sizing:border-box;
+HTML, BODY {
+  height: 100%;
 }
 
-
-.nav {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 2;
-  cursor: pointer;
-  width: 7%;
-  height: 100vh;
-  overflow: scroll;
-  position: fixed;
-  top: 0;
-  left: 92.5%;
-  white-space: nowrap;
-  font-family: 'Raleway', sans-serif;
-  text-align:center;
-  padding-top: 350px;
-  text-decoration: underline;
-  -webkit-transform: rotate(90deg);
+BODY {
+  background: #082330;
+  background-size: .12em 100%;
+  font: 16em/1 Arial;
 }
 
-.fcontent {
-
-font-family: 'Raleway', sans-serif;
-top:50%;
-bottom:50%;
-text-align:center;
-padding-top: 350px;
-white-space: nowrap;
-font-weight: 600;
-width: 7%;
-height: 100vh;
-position: fixed;
-top: 0;
-left: 0;
-cursor: pointer;
--webkit-transform: rotate(-90deg);
+.text--line {
+  font-size: .5em;
 }
 
-
-.mainarticle{
-  width: 40%;
-  height: 100vh;
-  overflow: scroll;
-  position: fixed;
-  top: 0;
-  left: 7%;
-  background-color: white;
-  padding-left: 20px;
-  padding-right: 60px;
-  padding-top:20px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-  color: rgb(255,99,71);
-  line-height: 1.4;
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.support{
-  width: 45%;
-  height: 100vh;
-  overflow: scroll;
-  position: fixed;
-  top: 0;
-  left: 47%;
-  background-color: rgb(230,230,250);
-  padding-left: 70px;
-  padding-right: 60px;
-  padding-top:200px;
-  padding-bottom: 100px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 1.4;
-  text-align: justify;
-
-
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 3px;
+  -webkit-animation: stroke-offset 9s infinite linear;
+          animation: stroke-offset 9s infinite linear;
 }
-p{
-
-  width: 45%;
-  height: 100vh;
-  overflow: scroll;
-  position: fixed;
-  top: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 1.4;
-  text-align: justify;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end);
+.text-copy:nth-child(1) {
+  stroke: #360745;
+  stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(2) {
+  stroke: #D61C59;
+  stroke-dashoffset: 14%;
+}
+.text-copy:nth-child(3) {
+  stroke: #E7D84B;
+  stroke-dashoffset: 21%;
+}
+.text-copy:nth-child(4) {
+  stroke: #EFEAC5;
+  stroke-dashoffset: 28%;
+}
+.text-copy:nth-child(5) {
+  stroke: #1B8798;
+  stroke-dashoffset: 35%;
 }
 
-p:nth-child(2){
-  animation: type2 8s steps(60, end);
+@-webkit-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
 }
 
-p a{
-  color: white;
-  text-decoration: none;
-}
-
-span{
-  animation: blink 1s infinite;
-}
-
-@keyframes type{
-  from { width: 0; }
-}
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; }
-}
-
-@keyframes blink{
-  to{opacity: .0;}
-}
-
-
-
-.menu {
-  height: 100vh;
-  width: 50vw;
-  background-color: rgb(230,230,250);
-  position: fixed;
-  right: -50vw;
-  top: 0px;
-  z-index: 1;
-  transition: all 1s;
-  font-family: 'Raleway', sans-serif;
-  padding-top: 150px;
-  white-space: nowrap;
-  font-weight: 300;
-  padding-left: 80px;
-}
-
-.menu.showme {
-  right: 0;
-  transition: all 1s;
-}
-
-.backtotop {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-}
-
-.rollover {
-  color: red;
-}
-
-.rollover:hover {
-  color: blue;
-}
-
-.blur {
-  position: fixed;
-  opacity: 0;
-  pointer-events: none;
-  width: 50%;
-  height: 100vh;
-  position: fixed;
-  top:0;
-  left:55%;
-  color:black;
-}
-}
-
-.blur.showme {
-  opacity: 1;
-}
-.landscape {
-  opacity: 0;
-  right: 100px;
-    background-color: white;
-
-}
-.landscape.showme {
-  opacity: 1;
-  right: 100px;
-    background-color: white;
-
-
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
 }
