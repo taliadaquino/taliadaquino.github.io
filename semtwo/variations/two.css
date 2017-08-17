@@ -1,0 +1,164 @@
+* {
+  box-sizing:border-box;
+}
+
+
+ html,body{
+	margin:0;
+	padding:0;
+	height:50%;
+	overflow:hidden;
+	cursor:none;
+	}
+#chalkboard{
+	position:absolute;
+	top:0;
+	left:0;
+	width:50%;
+	height:50%;
+	z-index:1;
+	cursor:none;
+	background:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
+	}
+.chalk{
+	width:40px;
+	height:50px;
+	background:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/chalk.png);
+	position:absolute;
+	padding:0;
+	margin:0;
+	bottom:0;
+	left:0;
+	cursor:none;
+	z-index:2;
+	}}
+
+.heading {
+
+font-family: "Arial Black";
+color:orange;
+font-size: 65pt;
+text-align: center;
+padding-top: 550px;
+webkit-animation: rainbow 1s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow 1s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow 1s infinite;
+  position: absolute;
+    z-index:100;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: orange;}
+	80%{color: red;}
+	100%{color: orange;}position: absolute;
+    z-index:100;
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+  20%{color: red;}
+	40%{color: yellow;}
+	60%{color: orange;}
+	80%{color: red;}
+	100%{color: orange;}position: absolute;
+    z-index:100;
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  20%{color: red;}
+	40%{color: yellow;}
+	60%{color: orange;}
+	80%{color: red;}
+	100%{color: orange;}position: absolute;
+    z-index:100;
+}
+
+
+
+.circleback {
+  transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+     border: solid #f7cac9;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    position: fixed;
+  	left:96%;
+  	bottom:650px;
+  	display:inline-block;
+    position: absolute;
+      z-index:100;
+ }
+
+.circleforward {
+  position:fixed;
+  left:96%;
+  bottom:50px;
+  transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+   border: solid #f7cac9;
+        border-width: 0 4px 4px 0;
+      display: inline-block;
+        padding: 6px;
+        position: absolute;
+          z-index:100;
+
+}
+
+
+.circlehome{
+  position:fixed;
+  left:96%;
+  bottom:350px;
+  transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+   border: solid #f7cac9;
+        border-width: 0 4px 4px 0;
+      display: inline-block;
+        padding: 7px;
+        position: absolute;
+          z-index:100;
+
+}
+.circlehome2 {
+  transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+     border: solid #f7cac9;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 7px;
+    position: fixed;
+  	left:96%;
+  	bottom:350px;
+  	display:inline-block;
+    position: absolute;
+      z-index:100;
+ }
+
+
+
+.heading {
+
+font-family: "Arial Black";
+color:orange;
+font-size: 65pt;
+text-align: center;
+left:70px;
+padding-top: 550px;
+webkit-animation: rainbow 1s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow 1s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow 1s infinite;
+  position: absolute;
+    z-index:100;
+}

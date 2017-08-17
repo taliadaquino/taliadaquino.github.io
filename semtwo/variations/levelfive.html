@@ -2,7 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>
+    <script src="jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="five.js" charset="utf-8"></script>
+ </script>
+ <title>
+
 level five
 
     </title>
@@ -108,8 +112,60 @@ level five
       60% { top: -150px; }
       80% { top: -200px; }
   }
-  </style>
+  .circleback {
+    transform: rotate(135deg);
+       -webkit-transform: rotate(135deg);
+       border: solid #f7cac9;
+      border-width: 0 4px 4px 0;
+      display: inline-block;
+      padding: 6px;
+      position: fixed;
+    	left:96%;
+    	bottom:650px;
+    	display:inline-block;
+   }
 
+  .circleforward {
+    position:fixed;
+    left:96%;
+    bottom:50px;
+    transform: rotate(-45deg);
+     -webkit-transform: rotate(-45deg);
+     border: solid #f7cac9;
+          border-width: 0 4px 4px 0;
+        display: inline-block;
+          padding: 6px;
+
+
+  }
+
+
+  .circlehome{
+    position:fixed;
+    left:96%;
+    bottom:350px;
+    transform: rotate(-45deg);
+     -webkit-transform: rotate(-45deg);
+     border: solid #f7cac9;
+          border-width: 0 4px 4px 0;
+        display: inline-block;
+          padding: 7px;
+
+  }
+  .circlehome2 {
+    transform: rotate(135deg);
+       -webkit-transform: rotate(135deg);
+       border: solid #f7cac9;
+      border-width: 0 4px 4px 0;
+      display: inline-block;
+      padding: 7px;
+      position: fixed;
+    	left:96%;
+    	bottom:350px;
+    	display:inline-block;
+   }
+      }
+    </style>
 
 
 
@@ -120,6 +176,13 @@ level five
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     </head>
 
+
+        <a href="levelfour.html" class="circleback"> </a>
+        <a href="index.html" class="circlehome"> </a>
+        <a href="index.html" class="circlehome2"> </a>
+      </div>	<a href="levelone.html" class="circleforward"> </a>
+        </div>
+    </div>
     <body>
     <div class="Iam">
 
@@ -145,11 +208,21 @@ level five
       </div></div><div class="white">
 
 
-    </b><br><br><br><b>
-white lies.<b>
-<br><br><br><br><br><br><br>
-Black is Beautiful.    </div>
+
+    </b><br><br><br><b><div class="play_bell">
+white lies.<b></div>
+<br><br><br><br><br><br><br><div class="pause_bell">
+Black is Beautiful.    </div></div>
+
+
+
     </div>
+
+
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="krusty_krab_pizza.mp3" type="audio/mpeg">
+    </audio>
+
     </body>
 
   </body>
