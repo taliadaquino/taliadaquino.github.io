@@ -4,14 +4,13 @@ $(document).ready(function() {
 
   // On .nav click, toggleClass ON or OFF showme.
 
-
-
-
-$('.nav').click(function() {
-  $('.menu').toggleClass('showme');
-});
-
 $('.nav1').click(function() {
   $('.menu1').toggleClass('showme');
 });
-       });
+
+$('.nav2').click(function() {
+  $('.menu2').toggleClass('showme');
+});
+
+
+});

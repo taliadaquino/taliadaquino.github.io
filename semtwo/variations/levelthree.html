@@ -10,7 +10,7 @@ level three
     <style media="screen">
       body {background-image: url(
 
-            "https://cdn.dribbble.com/users/949593/screenshots/3392895/scissors800x600.gif" );
+            "" );
             background-repeat: no-repeat;
                   background-size: 100vw 100vh;
                   background-attachment: fixed;
@@ -112,7 +112,108 @@ level three
   	bottom:350px;
   	display:inline-block;
  }
-    }
+ /* keyframes definition for WebKit browsers */
+
+ @-webkit-keyframes travel {
+   from { left: 0;     }
+   to   { left: 640px; }
+ }
+
+ @-webkit-keyframes bounce {
+   from, to  {
+     bottom: 10;
+     -webkit-animation-timing-function: ease-out;
+   }
+   100% {
+     bottom: 90px;
+     -webkit-animation-timing-function: ease-in;
+   }
+ }
+
+ @-webkit-keyframes spin {
+   from {                                     }
+   to   { -webkit-transform: rotateZ(360deg); }
+ }
+
+ /* keyframes definition for other browsers */
+
+ @keyframes travel {
+   from { left: 0;     }
+   to   { left: 1200px; }
+ }
+
+ @keyframes bounce {
+   from, to  {
+     bottom: 0;
+     animation-timing-function: ease-out;
+   }
+   50% {
+     bottom: 90px;
+     animation-timing-function: ease-in;
+   }
+ }
+
+ @keyframes spin {
+   from {
+     -moz-transform: rotate(0);
+     -o-transform: rotate(0);
+     -ms-transform: rotate(0);
+     transform: rotate(0);
+   }
+   to {
+     -moz-transform: rotate(360deg);
+     -o-transform: rotate(360deg);
+     -ms-transform: rotate(360deg);
+     transform: rotate(360deg);
+   }
+ }
+
+ /* styles for the stage and animated elements */
+
+ #stage {
+   position: relative;
+   margin: em auto;
+   width: 100vh 100vh;
+   height: 100vh;
+   border: 2px solid orange;
+   background: orange;
+ }
+
+ #traveler {
+   position:relative;
+   width: 20px;
+   height: 240px;
+
+   -webkit-animation-name: travel;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-duration: 4.8s;
+
+   animation-name: travel;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-duration: 4.8s;
+ }
+
+ #bouncer {
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   border-radius: 10px;
+   background: black;
+
+
+   -webkit-animation-name: bounce, spin;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-duration: 4.2s;
+
+   animation-name: bounce, spin;
+   animation-iteration-count: infinite;
+   animation-duration: 4.2s;
+ }
+
   </style>
 
 
@@ -127,7 +228,11 @@ level three
     <a href="index.html" class="circlehome2"> </a>
   </div>	<a href="levelfour.html" class="circleforward"> </a>
     </div>
-
+    <div id="stage">
+    <div id="traveler">
+    <div id="bouncer"><!-- --></div>
+    </div>
+    </div>
 
       <div class="text">
 <br><br><br>
@@ -149,6 +254,7 @@ level three
   </div>
 
 
+  <div>
 
   </div>
 <div class="heading">
@@ -156,6 +262,11 @@ level three
 <br>
     A&nbsp;R&nbsp;C&nbsp;H&nbsp;I&nbsp;T&nbsp;E&nbsp;C&nbsp;T&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;34
   </div></div>
+      <a href="leveltwo.html" class="circleback"> </a>
+      <a href="index.html" class="circlehome"> </a>
+      <a href="index.html" class="circlehome2"> </a>
+    </div>	<a href="levelfour.html" class="circleforward"> </a>
+      </div>
     </div>
   </body>
 </html>

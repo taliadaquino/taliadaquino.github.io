@@ -1,19 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
 .row {
   display:flex;
-      height: 100vh;
+      height: auto;
   flex-wrap:wrap;
-  background: white;
+
   font-family:  "Avenir Next";
   margin: -10px;
 font-weight: bold;
 text-align: center;
 }
 
+body {
+  background: #FA8072;
+}
+
+a {
+  color: #f7cac9;
+font-weight: lighter;
+font-size: 20px;
+
+text-align: left;
+}
+
+.menu2_list {
+  color: #FA8072;
+font-weight: lighter;
+font-size: 20px;
+
+text-align: left;
+
+}
+
+
 .col__1of2 {
   flex:0 0 50%;
   height: 100vh;
   background-color: #f7cac9;
   color: white;
+  z-index: 1;
+
+
 
 }
 .col__2of2 {
@@ -21,7 +50,9 @@ text-align: center;
       height: 100vh;
   background-color: #FA8072;
   color:white;
-
+  position: fixed;
+border-left: 1px solid white;
+z-index: 1;
 }
 
 .box1 {
@@ -29,29 +60,32 @@ position: fixed;
 left: 18%;
 right:10%;
 border: 3px solid white;
-height: 10px;
+height: 13px;
 width: 100px;
 padding: 20px;
-padding-top: 10px;
-bottom:110px;
+padding-top: 0px;
+bottom:330px;
+
 }
 .box1 a:hover{
 
 background-color: white;
 color:#FA8072;
+
 }
 .box2 {
 position: fixed;
-right: 18%;;
+right: 18%;
 border: 3px solid white;
-height: 10px;
+height: 13px;
 width: 100px;
 padding: 20px;
-padding-top: 10px;
-bottom:110px;
+padding-top: 0px;
+bottom:330px;
 }
 .box2 a:hover{
-
+  display: block;
+position: fixed;
 background-color: white;
 color:#FA8072;
 }
@@ -61,111 +95,141 @@ color: white;
 margin-left: 200px;
 position: fixed;
 z-index: 10;
-margin-top: 250px;
+margin-top: 350px;
 font-size: 13pt;
 text-align: center;
 -webkit-transform: rotate(-90deg);
 -moz-transform: rotate(-90deg);
 -ms-transform: rotate(-90deg);
 -o-transform: rotate(-90deg);
+font-family:  "Avenir Next";
+
+font-weight: bold;
+text-align: center;
+}
 }
 
-.menu {
-  height: 100vh;
-  width: 50vw;
-  background-color: #FA8072;
-  position: fixed;
-  right: -50vw;
-  top: 0px;
-  z-index: 1;
-  transition: all 1s;
-  font-family: 'Raleway', sans-serif;
-  padding-top: 150px;
-  white-space: nowrap;
-  font-weight: 300;
-  padding-left: 80px;
-  color: white;
-  font-size: 15pt;
-
-
+.main {
+  width: 80%;
+  margin: auto;
 }
-
-
-.menu.showme {
-  right: 0;
-  transition: all 1s;
-}
-
-
-.nav {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 2;
-  cursor: pointer;
-  width: 40%;
-  height: 100vh;
-  overflow: scroll;
-  position: fixed;
-  top: 0;
-  left: 92.5%;
-  white-space: nowrap;
-  font-family: 'Raleway', sans-serif;
-  text-align:center;
-  padding-top: 350px;
-
-
-}
-
-
-.menu1 {
-  height: 100vh;
-  width: 50vw;
-  background-color:#f7cac9;
-  position: fixed;
-  left: -50vw;
-  top: 0px;
-  z-index: 1;
-  transition: all 1s;
-  font-family: 'Raleway', sans-serif;
-  padding-top: 150px;
-  white-space: nowrap;
-  font-weight: 300;
-  padding-left: 80px;
-  color: white;
-  font-size: 15pt;
-
-
-}
-mark {
-    background-color: white;
-
-    text-decoration: none;
-    color: inherit;
-}
-
-.menu1.showme {
-  left: 0;
-  transition: all 1s;
-}
-
-
 .nav1 {
   position: fixed;
   top: 10px;
   left: 10px;
   z-index: 2;
   cursor: pointer;
-  width: ;
-  height: 100vh;
-  overflow: scroll;
-  position: fixed;
-  top: 0;
-  right: 10%;
-  white-space: nowrap;
-  font-family: 'Raleway', sans-serif;
-  text-align:center;
-  padding-top: 350px;
-  text-decoration: underline;
+}
 
+
+/* Notice the position.. it's right:-50vw; that means its 50% off the screen, HIDDEN.  */
+
+.menu1 {
+  height: 100vh;
+  width: 50vw;
+  background-color: #FA8072;
+  position: fixed;
+  left: -50vw;
+  top: 0px;
+  z-index: 1;
+  transition: all 2s;
+  color:white;
+
+}
+
+
+/* The added class showme makes the right 0. So it transitions from -50vw offscreen to right 0 on screen.  */
+
+.menu1.showme {
+  left: 0;
+  transition: all 2s;
+    text-decoration: none;    color: white;
+
+}
+
+.main1 {
+  transition: all 2s;
+  margin-top: -0px;
+    text-decoration: none;    color: white;
+}
+
+.main1.moveleft {
+  margin-top: -40vw;
+  transition: all 2s;
+    text-decoration: none;
+    color: white;
+    font-size:
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.backtotop {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+
+
+.nav2 {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+/* Notice the position.. it's right:-50vw; that means its 50% off the screen, HIDDEN.  */
+
+.menu2 {
+  height: 100vh;
+  width: 50vw;
+  background-color: #f7cac9;
+  position: fixed;
+  right: -50vw;
+  color:blue;
+  top:0;
+text-align: center;
+display: block;
+  z-index: 1;
+  transition: all 2s;
+
+}
+
+
+
+
+/* The added class showme makes the right 0. So it transitions from -50vw offscreen to right 0 on screen.  */
+
+.menu2.showme {
+  right: 0;
+  transition: all 2s;
+    color:blue;
+}
+
+.main2 {
+  transition: all 2s;
+  margin-top: -0px;
+  color:blue;
+
+}
+
+.main2.moveleft {
+  margin-top: -40vw;
+  transition: all 2s;
+    text-decoration: none;
+    color: white;
+    font-size:
+      color:blue;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
 }
