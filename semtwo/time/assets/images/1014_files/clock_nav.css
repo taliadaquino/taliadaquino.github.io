@@ -1,0 +1,221 @@
+/********************* Main clock navigation *********************/
+#clockNavC {
+  z-index: 300;
+  top: 0px;
+  left: 0px;
+  overflow: auto;
+  margin: 0px auto;
+  max-width: 1300px;
+  position: relative;
+  height: 170px;
+}
+
+
+/* Regular navigation box */
+#clockNavMaxC {
+  width: 550px;
+  height: 160px;
+  border: 3px solid #000; /*#f00 #FCF127;*/
+  border-top: 0px;
+  box-shadow: 2px 4px 9px 4px #111;
+  background-color: #eee;
+  color: #111;
+}
+
+.clockNavMaxC_hidden {
+  top: -175px;
+}
+
+/* Minimized navigation box */
+#clockNavMinC {
+  top: 0px;
+  width: 480px;
+  height: 50px;
+  z-index: 1000;
+}
+
+/* Social Icons */
+#clockNav_social{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 16px;
+}
+
+#clockNav_social a{
+  color: #222;
+}
+
+
+
+
+/* Common to both of the navigation items */
+.clockNavItemPage {
+  position: absolute;
+  left: 10px;
+}
+
+/* Login link */
+#loginC {
+  position: absolute;
+  bottom: 3px;
+  right: 8px;
+}
+
+/* Human clock title */
+.mainTitle {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+}
+
+.mainTitle a {
+  font-size: 42px;
+  font-weight: bold;
+  text-decoration:none;
+
+}
+
+#clockNavMaxC .mainTitle a {
+  color: #000;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+
+
+#clockNavMinC .mainTitle a {
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+/* Main clock navigation container */
+#clockNavigationC {
+  position: absolute;
+  left: 30px;
+  bottom: 15px;
+  width: 520px;
+}
+
+/* Clock item */
+.navIconC {
+  margin: 3px;
+  position: relative;
+  border: 4px solid #eee;
+  border-radius: 10px;
+  float: left;
+}
+
+/* Bordered clock item */
+.navIconSpriteItem {
+  border: 1px solid #222;
+  border-radius: 5px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: left top;
+  cursor: pointer;
+}
+
+/* Clock Item mousover state */
+.navOver {
+  box-shadow: 5px 5px 2px #888 !important;
+  border: 4px solid #e05f52 !important;
+}
+
+/* Applied CSS to the navIconSpriteItem if this navigation item is the current clock */
+.navCurrent {
+  border: 1px solid #e05f52 !important;
+}
+
+/* Applied CSS if this navigation item is clicked */
+.navClick {
+  border-color: #F00 !important;
+}
+
+
+
+
+
+/* Note: These must match the dimensions in $NAV_DEFS at the top of sprite.class.php */
+/* all btnNav_ have the navIcon class applied */
+
+/* Button: oldschool */
+#btnNav_oldschool .inlayImg {
+  width: 100px;
+  height: 75px;
+}
+
+/* Button: analog */
+#btnNav_analog .inlayImg {
+  width: 75px;
+  height: 75px;
+}
+
+/* Button: montage */
+#btnNav_montage .inlayImg {
+  width: 90px;
+  height: 75px;
+}
+
+/* Button: Video */
+#btnNav_video {
+  top: -2px;
+  width: 180px;
+  height: 79px;
+}
+
+#filmC {
+  position: relative;
+}
+
+#filmc div {
+  position: absolute;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#film {
+  z-index: 5;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 79px;
+  overflow: hidden;
+  background-color: #7c1b06; /* #8f3624;*/
+  background-position: 0px 0px;
+  background-image: url('/static/images/film_overlay.png');
+}
+
+
+#videoLeft {
+  z-index: 10;
+  top: 12px;
+  left: 0px;
+  width: 37px;
+  height: 56px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: absolute;
+}
+
+
+#videoCenter {
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  top: 12px;
+  left: 40px;
+  width: 100px;
+  height: 56px;
+  background-repeat: no-repeat;
+}
+
+#videoRight {
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  width: 35px;
+  height: 56px;
+  background-repeat: no-repeat;
+}

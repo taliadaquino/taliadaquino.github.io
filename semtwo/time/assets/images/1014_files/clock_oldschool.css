@@ -1,0 +1,150 @@
+/* Main Clock Frame */
+#clockPageC {
+  position: relative;
+  max-width: 980px;
+  margin: 0px auto;
+}
+
+#spriteArea_container {
+  margin-top: 29px;
+  margin-left: 20px;
+  overflow: hidden;
+  position: relative;
+  top: 0px; 
+  left: 0px;
+  position: absolute;
+}
+
+.spritePad {
+  width: 500px;
+  float: left;
+}
+
+.spritePadInitial { /* used to avoid sprite reposition flicker on page load */
+  height: 1000px !important;
+}
+
+#clockFrameC {
+  float: left;
+  width: 530px;
+  margin: 0px auto;
+  background-color: #FFF;
+  border: 10px solid #000;
+  padding: 20px;
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#overflowC {
+  height: 500px;
+  margin: 10px;
+}
+
+.spritePage { /* Note: be sure and put everything in the sprite page at a higher z-index or clicks won't work */
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.btnNextPage {
+  margin: 2px 1px 1px 3px;
+  float: left;
+  opacity: .5;
+  height: 50px;
+  width: 53px;
+  line-height: 50px;
+  display: none;
+  padding: 4px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #555;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+
+
+#locationBar {
+  margin: 0px auto;
+  width: 500px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #333;
+}
+
+
+#clockImageC {
+  cursor: pointer;
+}
+
+
+
+#spriteC {
+  margin-top: 20px;
+}
+
+.spriteImage {
+  float: left;
+  position: relative;
+  z-index: 5;
+  opacity: .1;
+  border-radius: 6px;
+  border: 1px solid #FCC;
+  margin: 3px;
+}
+
+.spriteSelected {
+  border-radius: 6px;
+  border: 5px solid #F00;
+  margin: -1px;
+}
+
+#usernameContainer {
+  font-size: 8px;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* Fullscreen Settings */
+.fullscreenSettings {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  background-color: #444;
+  position: absolute;
+}
+
+.fullscreenClockFrame {
+  position: relative !important;
+  z-index: auto !important;
+  float: left !important;;
+}
+.fullscreenSpriteC {
+  position: relative !important;
+  z-index: auto !important;
+  float: left !important;
+  width: 400px !important;
+  height: 550px !important;
+}
+
+.fullscreenWrapper {
+  padding-top: 10%;
+  padding-left: 20%;
+  overflow: auto;
+}
+
+
+/* Popup Control bar: Set as necessary */
+.btnPlay, .btnPause, .btnCloseFull {
+  display: none;
+}
